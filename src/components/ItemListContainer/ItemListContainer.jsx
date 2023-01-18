@@ -32,7 +32,7 @@ const ItemListContainer = () => {
 
           <Sidebar />
 
-          <div id="content" className="p-2 p-md-2 pt-5">
+          <div  className="p-2 p-md-2 pt-5">
             <section>
               <div className="container">
                 <div className="row">         
@@ -41,7 +41,7 @@ const ItemListContainer = () => {
 
                       <div className='col-sm-6 col-md-6 col-lg-4'>
                         <div className="card pb-4">
-                          {/* <Link className="position-absolute top-0 end-0 btn btn-link"><i className="bi bi-heart"></i></Link> */}
+                          <Link className="position-absolute top-0 end-0 btn btn-link"><i className="bi bi-heart"></i></Link>
                           <Link  key={id} to={`/itemDetail/${id}`} className="card-body">
                             <img src={image} className="card-img-top" alt="..."/>
                             <h5 className="card-title">{nombre}</h5>
