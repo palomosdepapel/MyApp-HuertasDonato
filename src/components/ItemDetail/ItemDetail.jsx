@@ -5,9 +5,6 @@ import useFirebase from '../../hook/useFirebase'
 
 const ItemDetail = () => {
 
-
-    
-
     const {id} = useParams()
     const {producto,getProduct,guardarNuevoProducto,generateTicket} = useFirebase()
     const navigate = useNavigate()
@@ -36,13 +33,13 @@ const ItemDetail = () => {
         getProduct(id)
 
         if(producto){
-            console.log(producto)
+            //console.log(producto)
         }
     
       return () => {
         
       }
-    }, [ ])
+    }, [])
 
 
 

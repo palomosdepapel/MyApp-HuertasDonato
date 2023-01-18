@@ -1,0 +1,8 @@
+.page-link {
+    text-decoration: none !important;
+    color: var(--primary-color);
+    font-size: 12px;
+}
+.page-link:hover {
+    color: var(--secondary-color);
+}
