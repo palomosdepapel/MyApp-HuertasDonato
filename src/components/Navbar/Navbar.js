@@ -1,13 +1,12 @@
 import logo from '../Navbar/logo.svg'
 import './Navbar.css';
 import React from 'react'
-//import Cartwidget from './CartWidget/Cartwidget'
-//import './CartWidget/Cartwidget.css';
+import Cartwidget from './CartWidget/Cartwidget'
+import './CartWidget/Cartwidget.css';
 import { NavLink } from 'react-router-dom';
+import Cart from '../Cart/Cart';
 
-const Navbar = (/* props */) => {
-  //const {productsCart} = props;
-  //console.log(productsCart);
+const Navbar = () => {
   return (
     <header>
       <nav className="navbar navbar-expand-xl bg-light fixed-top px-2">
@@ -35,15 +34,9 @@ const Navbar = (/* props */) => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          {/* <NavLink href="#OpenCart" className="btn btn-light btn-lg position-relative mx-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" title="Cart">
-            {productsCart.length > 0 ? (
-              // Si el carrito tiene uno o más productos, el ícono aparece lleno, caso contrario aprecerá vacío
-              <><i className="bi bi-cart-fill"></i> <Cartwidget /></>
-              ):(
-              <i className="bi bi-cart"></i>
-            )}
-            
-          </NavLink> */}
+          <NavLink href="#OpenCart" className="btn btn-light btn-lg position-relative mx-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" title="Cart">
+              <i className="bi bi-cart-fill"></i> <Cartwidget />            
+          </NavLink>
           <div
             className="collapse navbar-collapse px-2"
             id="navbarSupportedContent"
@@ -133,7 +126,9 @@ const Navbar = (/* props */) => {
           </div>
         </div>
       </nav>
+      <Cart/>
     </header>
+    
 
   )
 }
