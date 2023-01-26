@@ -1,0 +1,51 @@
+{
+    "productos" : [{
+        "id": 1,
+        "nombre": "Reloj Guess 6R06810172",
+        "descripcion": "Reloj guess analogo, para hombre, tablero redondo colores azul y rosa, estilo index + arabigo, pulso silicona color azul, calendario , Diámetro: 44.00mm , Resistencia al agua: 10 bares",
+        "precio": 1076000,
+        "descuento": 0,
+        "stock": 50,
+        "img": "relojes/hombres/6R06810172.jpg",
+        "destacado": 1,
+        "categoria": "relojes , hombres",
+        "favorito": 1
+      },
+      {
+        "id": 2,
+        "nombre": "Reloj Edox 2R06000141",
+        "descripcion": "Reloj edox analogo, para dama, tablero redondo colores blanco y rosa, estilo index + arabigo, pulso silicona color blanco, calendario, cronografo , Diámetro: 38.00mm , Resistencia al agua: 30 bares",
+        "precio": 4509000,
+        "descuento": 0,
+        "stock": 50,
+        "img": "relojes/mujeres/2R06000141.jpg",
+        "destacado": 0,
+        "categoria": "relojes , mujeres",
+        "favorito": 1
+      },
+      {
+        "id": 3,
+        "nombre": "Reloj Diesel On 7606000992",
+        "descripcion": "Reloj diesel analogo y digital, para hombre, tablero redondo color negro, estilo sin numeros, pulso lona color azul , Diámetro: 48.00mm , Resistencia al agua: 5 bares",
+        "precio": 4509000,
+        "descuento": 0,
+        "stock": 50,
+        "img": "relojes/inteligentes/7606000992.jpg",
+        "destacado": 0,
+        "categoria": "relojes , inteligentes",
+        "favorito": 1
+      },
+      {
+        "id": 4,
+        "nombre": "Reloj Diesel 698615140411",
+        "descripcion": "Reloj diesel analogo, para hombre, tablero redondo color negro, estilo index, pulso silicona colores naranja y negro, calendario, cronografo , Diámetro: 48.00mm , Resistencia al agua: 5 bares",
+        "precio": 1438000,
+        "descuento": 0,
+        "stock": 50,
+        "img": "relojes/deportivos/698615140411.jpg",
+        "destacado": 0,
+        "categoria": "relojes , deportivos",
+        "favorito": 0
+      }
+    ]
+  }

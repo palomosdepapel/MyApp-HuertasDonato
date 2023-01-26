@@ -1,13 +1,13 @@
-.App-logo{
-  width: 75px;
-}
-
-.navbar-toggler:focus {
-  box-shadow: none;
-}
-
-.navbar-nav .nav-link.active,
-.navbar-nav .show > .nav-link {
-  color: var(--primary-color);
-  font-weight: 600;
-}
+.App-logo-header{
+    width: 75px;
+  }
+  
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  
+  .navbar-nav .nav-link.active,
+  .navbar-nav .show > .nav-link {
+    color: var(--primary-color);
+    font-weight: 600;
+  }

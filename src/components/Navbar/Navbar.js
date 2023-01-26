@@ -1,20 +1,18 @@
 import logo from '../Navbar/logo.svg'
-import './Navbar.css';
-import React from 'react'
-import Cartwidget from './CartWidget/Cartwidget'
-import './CartWidget/Cartwidget.css';
-import { NavLink } from 'react-router-dom';
-import Cart from '../Cart/Cart';
+import React from "react";
+import "./Navbar.css";
+import "../CartWidget/CartWidget";
+import CartWidget from "../CartWidget/CartWidget";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
+
     <header>
       <nav className="navbar navbar-expand-xl bg-light fixed-top px-2">
         <div className="container-fluid">
-
-          <NavLink className={'navbar-brand d-none d-xl-block'} to="/"><img src={logo} className="App-logo" alt="Sue Jewellery" title="Sue Jewellery" /></NavLink>
-          <NavLink className={'navbar-brand d-xl-none d-xl-block'} to="/"><img src={logo} className="App-logo" alt="Sue Jewellery" title="Sue Jewellery" /></NavLink>
-
+          <NavLink className={'navbar-brand d-none d-xl-block'} to="./"><img src={logo} className="App-logo-header" alt="Sue Jewellery" title="Sue Jewellery" /></NavLink>
+          <NavLink className={'navbar-brand d-xl-none d-xl-block'} to="./"><img src={logo} className="App-logo-header" alt="Sue Jewellery" title="Sue Jewellery" /></NavLink>
           <form className="flex-fill d-xl-none d-xl-block flexi" role="search">
             <input
               className="form-control"
@@ -34,9 +32,16 @@ const Navbar = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
+          
+          <CartWidget />
+          {/* 
           <NavLink href="#OpenCart" className="btn btn-light btn-lg position-relative mx-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" title="Cart">
-              <i className="bi bi-cart-fill"></i> <Cartwidget />            
+            
           </NavLink>
+          <NavLink className=" nav-link " to="./cart">
+            <CartWidget />
+          </NavLink> */}
+
           <div
             className="collapse navbar-collapse px-2"
             id="navbarSupportedContent"
@@ -108,12 +113,12 @@ const Navbar = () => {
                   Relojes
                 </NavLink>
                 <ul className="dropdown-menu">
-                  <li><NavLink className="dropdown-item" to="/categoria/hombres">Relojes Hombre</NavLink></li>
-                  <li><NavLink className="dropdown-item" to="/categoria/mujeres">Relojes Mujer</NavLink></li>
-                  <li><NavLink className="dropdown-item" to="/categoria/inteligentes">Relojes Inteligentes</NavLink></li>
-                  <li><NavLink className="dropdown-item" to="/categoria/fashion">Fashion</NavLink></li>
-                  <li><NavLink className="dropdown-item" to="/categoria/deportivos">Deportivos</NavLink></li>
-                  <li><NavLink className="dropdown-item" to="/categoria/clasicos">Clásicos</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/category/hombres">Relojes Hombre</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/category/mujeres">Relojes Mujer</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/category/inteligentes">Relojes Inteligentes</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/category/fashion">Fashion</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/category/deportivos">Deportivos</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/category/clasicos">Clásicos</NavLink></li>
                 </ul>
               </li>
             </ul>
@@ -126,11 +131,8 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <Cart/>
     </header>
-    
+  );
+};
 
-  )
-}
-
-export default Navbar
+export default Navbar;

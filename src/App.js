@@ -1,32 +1,33 @@
-//import React, { useState , useEffect} from "react";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import ItemDetail from './components/ItemDetail/ItemDetail';
-import Footer from "./components/Footer/Footer";
-import Navbar from './components/Navbar/Navbar';
-import Cart from './components/Cart/Cart';
-import Error404 from "./components/Error404/Error404";
+import React from "react";
+import Navbar from "./Components/Navbar/Navbar";
+// import Card from './Components/Card/Card';
+// import { useState,useEffect } from 'react';
+import ItemListContainer from "./Components/ItemListContainer/ItemListContainer";
+import Footer from "./Components/Footer/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+//import HomePage from "./Components/HomePage/HomePage";
+import Cart from "./Components/Cart/Cart";
+import ItemDetailContainer from "./Components/ItemDetailContainer/ItemDetailContainer";
+import Error404 from "./Components/404/Error404";
+import CartProvider from "./Context/CartContext";
 
 function App() {
-
-  
-
   return (
-    <div className='App'>
-
-    <Router>
-      <Navbar/>
-      <Routes>
-        <Route path='/' element={<ItemListContainer/>} />
-        <Route path='/categoria/:categoria' element={<ItemListContainer/>} />
-        <Route path='/itemDetail/:id' element={<ItemDetail/>} />
-        <Route path='/carrito' element={<Cart/>} />
-        <Route path="*" element={<Error404/>} /> 
-      </Routes>
-    </Router>
-    <Footer />
-    </div>
+    <BrowserRouter>
+      <CartProvider>
+        <Navbar/>
+        <Routes>
+          
+          <Route path="/" element={<ItemListContainer />} />
+          <Route path="/category/:categoryId" element={<ItemListContainer />} />
+          <Route path="/cart" element={<Cart/>} />
+          <Route path="/detail/:detailId" element={<ItemDetailContainer />} />
+          <Route path="*" element={<Error404 />} />
+        </Routes>
+      </CartProvider>
+      <Footer />
+    </BrowserRouter>
   );
 }
 
