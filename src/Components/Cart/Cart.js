@@ -10,10 +10,10 @@ const Cart = () => {
 
   const order ={
     buyer: {
-      name:'Pablo',
-      email:'pablo@gmail.com',
-      phone:'116400233',
-      address: 'Av siempre viva 123'
+      name:'Juan',
+      email:'jhuertas@gmail.com',
+      phone:'574554430315',
+      address: 'Dir'
     },
     items: cart.map(product => ({id:product.id, name:product.name,price:product.price, quantity: product.quantity})),
     total: totalPrice()
