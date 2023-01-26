@@ -1,4 +1,4 @@
-# Proyecto ecomemrce React JS //////
+# Project ecommerce React JS //////
 
 ![alt text](https://github.com/palomosdepapel/MyApp-HuertasDonato/blob/master/public/gif/home.gif?raw=true)
 ![alt text](https://github.com/palomosdepapel/MyApp-HuertasDonato/blob/master/public/gif/cart.gif?raw=true)
