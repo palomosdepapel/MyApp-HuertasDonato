@@ -1,4 +1,9 @@
-# Getting Started with Create React App //////
+# Proyecto eccomerce React JS //////
+
+![alt text](https://github.com/palomosdepapel/MyApp-HuertasDonato/blob/master/public/gif/home.gif?raw=true)
+![alt text](https://github.com/palomosdepapel/MyApp-HuertasDonato/blob/master/public/gif/cart.gif?raw=true)
+
+Coderhouse commission 34850 ReactJS basic project. The website uses bootstrap, icon bootstrap and firebase.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
