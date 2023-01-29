@@ -1,0 +1,16 @@
+footer {
+  background-color: var(--greylight-color);
+}
+
+footer ul li a {
+  font-size: 12px;
+  color: var(--grey-color);
+}
+
+footer ul li a.active {
+  color: var(--primary-color);
+}
+
+.App-logo{
+  width: 50%;
+}
