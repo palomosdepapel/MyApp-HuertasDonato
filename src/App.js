@@ -1,12 +1,9 @@
 import "./App.css";
 import React from "react";
 import Navbar from "./Components/Navbar/Navbar";
-// import Card from './Components/Card/Card';
-// import { useState,useEffect } from 'react';
 import ItemListContainer from "./Components/ItemListContainer/ItemListContainer";
 import Footer from "./Components/Footer/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-//import HomePage from "./Components/HomePage/HomePage";
 import Cart from "./Components/Cart/Cart";
 import ItemDetailContainer from "./Components/ItemDetailContainer/ItemDetailContainer";
 import Error404 from "./Components/404/Error404";
